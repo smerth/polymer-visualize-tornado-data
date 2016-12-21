@@ -1,0 +1,11 @@
+body, html {
+  font-family: 'Roboto', Arial, sans-serif;
+  height: 100%;
+  margin: 0;
+}
+/*had to add class .paper-card-0 to get styles to override default*/
+paper-card.paper-card-0 {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
