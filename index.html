@@ -1,62 +1,76 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html>
 <head>
   <title>PolymerVizCodelab</title>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+        name="viewport">
+  <meta content="yes"
+        name="mobile-web-app-capable">
+  <meta content="yes"
+        name="apple-mobile-web-app-capable">
   <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
-  <link rel="import" href="bower_components/google-map/google-map.html">
-  <link rel="import" href="bower_components/point-overlay/point-overlay.html">
-  <link rel="import" href="bower_components/paper-card/paper-card.html">
-  <link rel="import" href="bower_components/paper-slider/paper-slider.html">
-  <link rel="import" href="bower_components/iron-ajax/iron-ajax.html">
-
-
-  <link rel="import" href="bower_components/iron-icons/iron-icons.html">
-  <link rel="import" href="bower_components/paper-toolbar/paper-toolbar.html">
-  <!-- <link rel="import" href="bower_components/font-roboto/roboto.html"> -->
-  <link rel="import" href="bower_components/paper-button/paper-button.html">
-  <link rel="import" href="bower_components/paper-checkbox/paper-checkbox.html">
-  <link rel="import" href="bower_components/paper-icon-button/paper-icon-button.html">
-  <link rel="import" href="bower_components/paper-fab/paper-fab.html">
-  <link rel="import" href="bower_components/paper-tabs/paper-tabs.html">
-  <link rel="import" href="bower_components/paper-toast/paper-toast.html">
-
-  <link rel="stylesheet" href="styles.css">
+  <link href="bower_components/google-map/google-map.html"
+        rel="import">
+  <link href="bower_components/point-overlay/point-overlay.html"
+        rel="import">
+  <link href="bower_components/point-overlay/tornadoes-1950-2014.json"
+        rel="import">
+  <link href="bower_components/paper-card/paper-card.html"
+        rel="import">
+  <link href="bower_components/paper-slider/paper-slider.html"
+        rel="import">
+  <link href="bower_components/iron-ajax/iron-ajax.html"
+        rel="import">
+  <link href="bower_components/iron-icons/iron-icons.html"
+        rel="import">
+  <link href="bower_components/paper-toolbar/paper-toolbar.html"
+        rel="import"><!-- <link rel="import" href="bower_components/font-roboto/roboto.html"> -->
+  <link href="bower_components/paper-button/paper-button.html"
+        rel="import">
+  <link href="bower_components/paper-checkbox/paper-checkbox.html"
+        rel="import">
+  <link href="bower_components/paper-icon-button/paper-icon-button.html"
+        rel="import">
+  <link href="bower_components/paper-fab/paper-fab.html"
+        rel="import">
+  <link href="bower_components/paper-tabs/paper-tabs.html"
+        rel="import">
+  <link href="bower_components/paper-toast/paper-toast.html"
+        rel="import">
+  <link href="styles.css"
+        rel="stylesheet">
 </head>
-
-<body unresolved>
-  <template is="dom-bind" id="t">
-    
-    <google-map map="{{map}}" latitude="38.6" longitude="-95.8" zoom="5"
-      styles='[{"stylers":[{"saturation":-85}]},{"featureType":"water","stylers":[{"lightness":-20}]}]' on-google-map-ready="setPointSize" on-zoom-changed="setPointSize">
-    </google-map>
-    
-    <point-overlay map="[[map]]" uniforms="{{uniforms}}" data="{{data}}">
-    </point-overlay>
-    
-    <iron-ajax auto handle-as="json"
-      url="bower_components/point-overlay/tornadoes-1950-2014.json"
-      last-response="{{data}}">
-    </iron-ajax>
-    
-    <!--<paper-card elevation="2">-->
-    <!--  <paper-slider min="5" max="100" value="30" immediate-value="{{uniforms.pointSize}}">-->
-    <!--  </paper-slider>-->
-    <!--</paper-card>-->
-    
+<body unresolved="">
+  <template id="t"
+            is="dom-bind">
+    <google-map api-key="AIzaSyAXC-hcTVz4SMxWqSQRyJ0iqEr9IPiPJGI"
+                latitude="38.6"
+                longitude="-95.8"
+                map="{{map}}"
+                on-google-map-ready="setPointSize"
+                on-zoom-changed="setPointSize"
+                styles='[{"stylers":[{"saturation":-85}]},{"featureType":"water","stylers":[{"lightness":-20}]}]'
+                zoom="5"></google-map>
+    <point-overlay data="{{data}}"
+                   map="[[map]]"
+                   uniforms="{{uniforms}}"></point-overlay>
+    <iron-ajax auto
+               handle-as="json"
+               last-response="{{data}}"
+               url="bower_components/point-overlay/tornadoes-1950-2014.json"></iron-ajax>
+    <paper-card elevation="2">
+      <paper-slider immediate-value="{{uniforms.pointSize}}"
+                    max="100"
+                    min="5"
+                    value="30"></paper-slider>
+    </paper-card>
   </template>
   <script>
     var t = document.querySelector('#t');
     t.setPointSize = function(e) {
-      this.uniforms.pointSize = Math.exp(0.3 * this.map.getZoom());
+      this.uniforms.pointSize = Math.exp(0.2 * this.map.getZoom());
       this.notifyPath('uniforms.pointSize', this.uniforms.pointSize);
     };
   </script>
 </body>
-
 </html>
