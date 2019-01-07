@@ -1,11 +1,8 @@
 # Polymer Visualize Tornado Data
 
-
 A Polymer and Google Web Components app to visualize thousands of data points over an interactive Google Map, the app loads data, passes it into WebGL, and then allows zooming in on the map.
 
-![App Screenshot](https://raw.githubusercontent.com/smerth/polymer-visualize-tornado-data/master/Screenshot.png)
-
-
+![App Screenshot](https://raw.githubusercontent.com/smerth/polymer-visualize-tornado-data/master/screenshot.png)
 
 ## Install
 
@@ -23,15 +20,11 @@ Install gulp to deploy to gh-pages
 yarn install
 ```
 
-
-
 ## Develop
 
 ```bash
 polymer serve
 ```
-
-
 
 ## Build
 
@@ -47,8 +40,6 @@ to serve the built app
 polymer serve build/default
 ```
 
-
-
 ## Deploy to gh-pages
 
 Set up your codebase on github and then run
@@ -57,15 +48,10 @@ Set up your codebase on github and then run
 gulp deploy
 ```
 
-
-
 ## Demo
 
 [Tornado Data for the United States 1950-2014](https://smerth.github.io/polymer-visualize-tornado-data/)
 
-
-
 ## References
 
 [Data Visualization Using Polymer and WebGL](https://codelabs.developers.google.com/codelabs/polymer-webgl/index.html?index=..%2F..%2Findex#0)
-
