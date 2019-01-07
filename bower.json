@@ -1,9 +1,8 @@
 {
-  "name": "PolymerVizCodelab",
+  "name": "polymer-visualize-tornado-data",
   "description": "",
   "homepage": "",
-  "keywords": [
-  ],
+  "keywords": [],
   "author": "",
   "private": true,
   "dependencies": {
