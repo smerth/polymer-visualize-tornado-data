@@ -1,20 +1,21 @@
 # Welcome to polymer-visualize-tornado-data 👋
-
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000)
 ![Prerequisite](https://img.shields.io/badge/npm-%3E%3D7.0.14-blue.svg)
 ![Prerequisite](https://img.shields.io/badge/node-%3E%3D15.3.0-blue.svg)
-[![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](https://github.com/smerth/polymer-visualize-tornado-data#readme)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/smerth/polymer-visualize-tornado-data/graphs/commit-activity)
-[![License: MIT](https://img.shields.io/github/license/smerth/polymer-visualize-tornado-data)](https://github.com/smerth/polymer-visualize-tornado-data/blob/master/LICENSE)
+[![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](https://github.com/smerth/polymer-visualize-tornado#readme)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/smerth/polymer-visualize-tornado/graphs/commit-activity)
+[![License: MIT](https://img.shields.io/github/license/smerth/polymer-visualize-tornado-data)](https://github.com/smerth/polymer-visualize-tornado/blob/master/LICENSE)
+[![Twitter: StephenMerth](https://img.shields.io/twitter/follow/StephenMerth.svg?style=social)](https://twitter.com/StephenMerth)
 
-> Polymer components are used to display a Google Map of the United States overlayed with historical tornada data. The map UI is rounded out with the addition of other Polymer Navigation components.
+> A Polymer and Google Web Components app to visualize thousands of data points overlayed on an interactive Google Map. The app loads data, passes it into WebGL, and then allows zooming in on the map.
 
-### 🏠 [Homepage](https://github.com/smerth/polymer-visualize-tornado-data#readme)
+### 🏠 [Homepage](https://github.com/smerth/polymer-visualize-tornado#readme)
 
 ## Prerequisites
 
 - npm >=7.0.14
 - node >=15.3.0
+
 
 ## Screenshot
 
@@ -78,29 +79,32 @@ gulp deploy
 
 [Data Visualization Using Polymer and WebGL](https://codelabs.developers.google.com/codelabs/polymer-webgl/index.html?index=..%2F..%2Findex#0)
 
+
 ## Author
 
 👤 **Stephen Merth**
 
-- Website: http://smerth.github.io
-- Github: [@smerth](https://github.com/smerth)
+* Website: http://smerth.github.io
+* Twitter: [@StephenMerth](https://twitter.com/StephenMerth)
+* Github: [@smerth](https://github.com/smerth)
+* LinkedIn: [@stephen-merth](https://linkedin.com/in/stephen-merth)
 
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check [issues page](https://github.com/smerth/polymer-visualize-tornado-data/issues). You can also take a look at the [contributing guide](https://github.com/smerth/polymer-visualize-tornado-data/blob/master/CONTRIBUTING.md).
+Feel free to check [issues page](https://github.com/smerth/polymer-visualize-tornado/issues). You can also take a look at the [contributing guide](https://github.com/smerth/polymer-visualize-tornado/blob/master/CONTRIBUTING.md).
 
 ## Show your support
 
 Give a ⭐️ if this project helped you!
 
+
 ## 📝 License
 
 Copyright © 2021 [Stephen Merth](https://github.com/smerth).
 
-This project is [MIT](https://github.com/smerth/polymer-visualize-tornado-data/blob/master/LICENSE) licensed.
+This project is [MIT](https://github.com/smerth/polymer-visualize-tornado/blob/master/LICENSE) licensed.
 
----
-
+***
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
