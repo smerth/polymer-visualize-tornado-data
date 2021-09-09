@@ -1,14 +1,36 @@
 {
   "name": "polymer-visualize-tornado-data",
   "version": "1.0.0",
-  "description": "",
+  "description": "A Polymer and Google Web Components app to visualize thousands of data points overlayed on an interactive Google Map. The app loads data, passes it into WebGL, and then allows zooming in on the map.",
+  "author": {
+    "name": "Stephen Merth",
+    "email": "stephen.merth@gmail.com",
+    "url": "http://smerth.github.io/"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/smerth/polymer-visualize-tornado#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smerth/polymer-visualize-tornado.git"
+  },
+  "bugs": {
+    "url": "https://github.com/smerth/polymer-visualize-tornado/issues"
+  },
+  "engines": {
+    "npm": ">=7.0.14",
+    "node": ">=15.3.0"
+  },
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "Polymer",
+    "Web Components",
+    "Google",
+    "Maps",
+    "Node"
+  ],
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-gh-pages": "^0.5.4"
