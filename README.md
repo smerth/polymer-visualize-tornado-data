@@ -6,9 +6,15 @@ A Polymer and Google Web Components app to visualize thousands of data points ov
 
 ## Install
 
-You'll need to have node.js, polymer-cli and yarn installed to begin
+You'll need to have node.js, bower, polymer-cli and yarn installed to begin
 
 Install bower dependancies
+
+```bash
+bower install
+```
+
+Install polymer dependancies
 
 ```bash
 polymer install
@@ -19,6 +25,10 @@ Install gulp to deploy to gh-pages
 ```bash
 yarn install
 ```
+
+## Add API Key
+
+Go to the maps component in index.html and add a key to use Google Maps.
 
 ## Develop
 
